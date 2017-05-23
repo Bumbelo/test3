@@ -30,7 +30,7 @@ var changeImageRight = function(){
         galleryCounter=1;
     }
     $("#popup").stop().fadeOut(75, function(){
-        $("#popup").attr('src', 'animal'+galleryCounter+'.jpg').stop().fadeIn(75);
+        $("#popup").attr('src', 'animal'+galleryCounter+'.jpg').stop().fadeIn(150);
     });
     //$("#popup").attr('src', 'animal'+galleryCounter+'.jpg').fadeIn(500);
 }
@@ -41,7 +41,7 @@ var changeImageLeft = function(){
         galleryCounter=(".galimg").length-1;
     }
     $("#popup").stop().fadeOut(75, function(){
-        $("#popup").attr('src', 'animal'+galleryCounter+'.jpg').stop().fadeIn(75);
+        $("#popup").attr('src', 'animal'+galleryCounter+'.jpg').stop().fadeIn(150);
     });
 }
 

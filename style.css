@@ -1,0 +1,274 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Roboto;
+    box-sizing:border-box;
+}
+
+body{
+    background-image:url(background.png);
+    background-repeat:repeat;
+}
+
+.slicknav{
+    position:fixed;
+    height:50px;
+    width:100vw;
+    background:url(background.png);
+    background-repeat: repeat;
+    z-index:9;
+}
+
+.toggle-nav{
+    position: fixed;
+    color:dimgray;
+    text-decoration: none;
+    font-size:36px;
+    height:40px;
+    background: transparent;
+    border: none;
+}
+
+.toggle-nav:hover{
+    cursor:pointer;
+}
+
+.toggle-nav:active{
+    color:lightgray;
+}
+
+.toggle-nav:focus{
+    outline: 0;
+}
+
+.desktop, .mobile {
+    position:fixed;
+    display:inline-flex;
+    width:100vw;
+    z-index:9;
+}
+
+.mobile{
+    flex-wrap:wrap;
+    left:0;
+    top:50px;
+}
+
+.desktop a, .mobile a{
+    flex-grow: 1;
+    color:red;
+    text-align:center;
+    text-decoration: none;
+    color:white;
+    background-color:forestgreen;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.desktop a{
+    font-size:20px;
+    height:40px;
+    line-height: 40px;
+    flex-basis:25vw;
+    transition-duration: 0.5s;
+}
+
+.mobile a{
+    font-size:28px;
+    height:60px;
+    line-height: 60px;
+    flex-basis:100vw;
+    transition-duration: 0.4s;
+}
+
+.desktop a:hover, .mobile a:hover{
+    background-color:darkgreen;
+}
+
+#wrapper{
+    max-width:1000px;
+    background-color:rgba(255, 255, 255,0.5);
+    margin: 0 auto;
+    padding-top:40px;
+}
+
+header img{
+    width:100%;
+    display:block;
+}
+
+h1{
+    padding: 15px 0px;
+    text-align:center;
+    font-size:36px;
+}
+
+p{
+    padding: 5px 10px;
+}
+
+hr{
+    margin-top:10px;
+    border-top: 2px solid #9FE1AF;
+}
+
+footer{
+    font-size:14px;
+    color:black;
+    text-align:right;
+    padding-right:10px;
+}
+
+#image_slider{
+    position:relative;
+    width:100%;
+    height:100%;
+    margin-bottom:5px;
+}
+
+#slider{
+    width:100%;
+    overflow: hidden;
+    
+}
+
+#slider .slides{
+    display: block;
+    width:1000%;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide{
+    float:left;
+    list-style-type: none;
+    width:10%;
+}
+
+
+
+a.control_left{
+    position:absolute;
+    width:13%;
+    height:100%;
+    background-color:rgba(0,0,0,0.15);
+    text-decoration:none;
+    font-size:50px;
+    -webkit-box-shadow: inset 200px 0px 200px -200px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 200px 0px 200px -200px rgba(0,0,0,0.75);
+    box-shadow: inset 200px 0px 200px -200px rgba(0,0,0,0.75);
+}
+
+.control_left img{
+    position:absolute;
+    top:40%;
+    width:80%;
+    left:3%;
+}
+
+a.control_right{
+    position:absolute;
+    right:0;
+    width:13%;
+    height:100%;
+    background-color:rgba(0,0,0,0.15);
+    text-decoration:none;
+    font-size:50px;
+    -webkit-box-shadow: inset -200px 0px 200px -200px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset -200px 0px 200px -200px rgba(0,0,0,0.75);
+    box-shadow: inset -200px 0px 200px -200px rgba(0,0,0,0.75);
+}
+
+.control_right img{
+    position:absolute;
+    width:80%;
+    top:40%;
+    right:3%;
+}
+
+.gallery{
+    display:inline-flex;
+    width:100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.galimg{
+    margin: 1vh 0;
+    width: 30%;
+    height:100%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.galimg:hover{
+    opacity:0.8;
+}
+
+#popupDiv {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    z-index: 10;
+    background: rgba(0,0,0, 0.6);
+}
+
+#popup{
+    display:block;
+    position:absolute;
+    width: 80%;
+    margin:auto;
+    top: 50%;
+    left: 50%;
+    margin-top: -22.5%;
+    margin-left: -40%;
+    cursor: zoom-out;
+    z-index: 11;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.75);
+}
+
+#popup:hover{
+    opacity: 1;
+}
+
+.popup_left{
+    position: absolute;
+    top:50%;
+    margin-top:-4%;
+    left:0;
+    z-index:12;
+    width:10%;
+}
+
+.popup_left img{
+    width:100%;
+    height:100%;
+    float:left;
+    
+}
+
+.popup_right{
+    position: absolute;
+    top:50%;
+    margin-top:-4%;
+    right:0;
+    z-index:12;
+    width:10%;
+}
+
+.popup_right img{
+    width:100%;
+    height:100%;
+    float:right;
+    z-index:12;
+}
+
+.fullsize{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    z-index: 9;
+}
